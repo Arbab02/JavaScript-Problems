@@ -7,9 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text">
     <button onclick="change()">Click</button>
-    <p id="para">This is a paragraph</p>
+    <h2></h2>
+    <img src="pak.png" id="image" style="display: none; width: 20rem;">
+   
     <script>
+        let val =  document.querySelector('input');
+
+function change(){
+ if(val.value == '14 August'){
+    document.getElementById('image').style.display = 'block';
+    document.querySelector('h2').innerHTML = ""
+ }
+ 
+ else{
+    document.querySelector('h2').innerHTML = "No festival"
+ }
+}
+
+
 // function change(){
 //     let para =  document.getElementById('para');
 //   para.innerHTML = "Hello world 2 ";
@@ -32,17 +49,17 @@
 
 
 // Task 02:
-let array = [2, 24, 21, 16, 7, 4]
-let max = Math.max(...array);
-console.log(max);
+// let array = [2, 24, 21, 16, 7, 4]
+// let max = Math.max(...array);
+// console.log(max);
 
 // Task 03:
 // let totalMaks = +prompt('Enter your total numbers out of 250');
 // let ans = totalMaks / 2.5;
 // console.log("Your Percentage is: " + ans + "%");
-  
-// Task 04:
-// var marks = [26, 12, 31, 23, 75, 110, 82];
+
+// Tak 04:
+// let marks = [26, 12, 31, 23, 75, 110, 82];
          
 //          // Print Before sorting array
 //          console.log("Original Array");
@@ -54,9 +71,8 @@ console.log(max);
 //          console.log("After sorting in Ascending order");
               
 //          // Print sorted Numeric array
-//          console.log(marks); 
-        
-        
+//          console.log(marks);   
+
 // Task 05:
 // let a = +prompt('Enter value of a');
 // let b = +prompt('Enter value of b');
@@ -142,6 +158,7 @@ console.log(max);
 // if(string== find){
 
 // }
+
     </script>
 </body>
 </html>
